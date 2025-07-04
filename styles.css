@@ -114,6 +114,74 @@ footer {
     width: 100%;
 }
 
+/* Compact visitor stats in contact section */
+.visitor-stats-compact {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 188, 212, 0.2);
+}
+
+.visitor-stats-compact h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.visitor-map-container {
+    width: 100%;
+    max-width: 250px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: rgba(0, 188, 212, 0.05);
+    border: 1px solid rgba(0, 188, 212, 0.2);
+    border-radius: 6px;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Scale down the map content */
+.visitor-map-container > div {
+    transform: scale(0.6);
+    transform-origin: top left;
+    width: 166% !important;
+    height: 166% !important;
+}
+
+/* Hide any text content or debug info */
+.visitor-map-container div[style*="text-align"] {
+    display: none !important;
+}
+
+.visitor-map-container script {
+    display: none;
+}
+
+/* Hide fallback text when map is loaded */
+.visitor-map-container iframe + p,
+.visitor-map-container div + p {
+    display: none !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .visitor-stats-compact {
+        margin-top: 1rem;
+    }
+    
+    .visitor-map-container {
+        max-width: 200px;
+        height: 100px;
+    }
+    
+    .visitor-map-container > div {
+        transform: scale(0.5);
+        width: 200% !important;
+        height: 200% !important;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-content {
         flex-wrap: nowrap;
