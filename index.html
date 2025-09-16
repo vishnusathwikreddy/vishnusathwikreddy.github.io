@@ -1,227 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishnu Sathwik</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vishnu Sathwik Reddy — personal site with research interests, contact info, and links. Minimal, focused, and fast." />
+  <title>Vishnu Sathwik</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="light-theme">
-    <nav>
-        <div class="nav-content">
-            <h1>Vishnu Sathwik</h1>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="menu-wrapper">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                </ul>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round">
-                            <svg class="sun" viewBox="0 0 24 24"><path d="M12 15.5q1.45 0 2.475-1.025Q15.5 13.45 15.5 12q0-1.45-1.025-2.475Q13.45 8.5 12 8.5q-1.45 0-2.475 1.025Q8.5 10.55 8.5 12q0 1.45 1.025 2.475Q10.55 15.5 12 15.5Zm0 1.5q-2.075 0-3.537-1.463T7 12q0-2.075 1.463-3.537T12 7q2.075 0 3.537 1.463T17 12q0 2.075-1.463 3.537T12 17ZM1.75 12.75q-.325 0-.538-.213Q1 12.325 1 12q0-.325.212-.537Q1.425 11.25 1.75 11.25h2.5q.325 0 .537.213Q5 11.675 5 12q0 .325-.213.537-.213.213-.537.213h2.5q.325 0 .538.213Q23 11.675 23 12q0 .325-.212.537-.212.213-.538.213ZM12 5q-.325 0-.537-.213Q11.25 4.575 11.25 4.25v-2.5q0-.325.213-.538Q11.675 1 12 1q.325 0 .537.212.213.212.213.538v2.5q0 .325-.213.538Q12.325 5 12 5Zm0 18q-.325 0-.537-.212-.213-.212-.213-.538v-2.5q0-.325.213-.538Q11.675 19 12 19q.325 0 .537.212.213.212.213.538v2.5q0 .325-.213.538Q12.325 23 12 23ZM6 7.05l-1.425-1.4q-.225-.225-.213-.537.013-.312.213-.537.225-.225.513.225-.312 0-.537-.2Zm12.35 12.375L16.95 18q-.2-.225-.2-.538t.225-.512q.2-.225.5-.225t.525.225l1.425 1.4q.225.225.212.538-.012.313-.212.538-.225.225-.538.225t-.538-.225ZM16.95 7.05q-.225-.225-.225-.525 0-.3.225-.525l1.4-1.425q.225-.225.538-.213.313.013.538.213.225.225.225.537t-.225.537L18 7.05q-.2.2-.512.2-.312 0-.538-.2ZM4.575 19.425q-.225-.225-.225-.538t.225-.538L6 16.95q.225-.225.525-.225.3 0 .525.225.225.225.225.525 0 .3-.225.525l-1.4 1.425q-.225.225-.537.212-.312-.012-.537-.212Z"/></svg>
-                            <svg class="moon" viewBox="0 0 24 24"><path d="M12 21q-3.75 0-6.375-2.625T3 12q0-3.75 2.625-6.375T12 3q.35 0 .688.025.337.025.662.075-1.025.725-1.637 1.887Q11.1 6.15 11.1 7.5q0 2.25 1.575 3.825Q14.25 12.9 16.5 12.9q1.375 0 2.525-.613 1.15-.612 1.875-1.637.05.325.075.662Q21 11.65 21 12q0 3.75-2.625 6.375T12 21Zm0-1.5q2.725 0 4.75-1.687t2.525-3.963q-.625.275-1.337.412Q17.225 14.4 16.5 14.4q-2.875 0-4.887-2.013T9.6 7.5q0-.725.137-1.438.138-.713.413-1.337-2.275.5-3.963 2.525Q4.5 9.275 4.5 12q0 3.125 2.188 5.313T12 19.5Zm-.1-7.75Z"/></svg>
-                        </div>
-                    </label>
-                </div>
-            </div>
-        </div>
+<body>
+  <header class="site-header">
+    <nav class="top-nav" aria-label="Main">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section id="home" class="full-page about-section">
-            <div class="container">
-                <img src="assets/profile_pic.png" alt="Vishnu Sathwik" class="profile-photo">
-                <h2 class="typing-effect">Vishnu Sathwik | NLP Researcher & AI Enthusiast</h2>
-                
-                <p class="fade-in">
-                    I’m Vishnu Sathwik, an undergraduate researcher in Computer Science at 
-                    <a href="https://www.iiit.ac.in/" target="_blank" rel="noopener noreferrer">IIIT Hyderabad</a>. 
-                    I am currently a member of the 
-                    <a href="https://precog.iiit.ac.in/" target="_blank" rel="noopener noreferrer">Precog research group</a>, 
-                    where I work under the mentorship of 
-                    <a href="https://precog.iiit.ac.in/bio/" target="_blank" rel="noopener noreferrer">Dr. Ponnurangam Kumaraguru (PK)</a>.
-                </p>
+  <main class="content">
+    <h1 class="greeting">你好，我是Vishnu Sathwik。</h1>
+    <p class="intro">
+      I'm an undergraduate researcher in Computer Science at
+      <a href="https://www.iiit.ac.in/" target="_blank" rel="noopener noreferrer">IIIT Hyderabad</a>.
+      I'm part of the <a href="https://precog.iiit.ac.in/" target="_blank" rel="noopener noreferrer">Precog</a> research group, mentored by
+      <a href="https://precog.iiit.ac.in/bio/" target="_blank" rel="noopener noreferrer">Dr. Ponnurangam Kumaraguru (PK)</a>. <br>
+      Previously, I worked at the <a href="https://ema.iitdh.ac.in/" target="_blank" rel="noopener noreferrer">EMA Lab</a> at IIT Dharwad with
+      <a href="https://sites.google.com/view/drkonjengbamanand?pli=1" target="_blank" rel="noopener noreferrer">Dr. Konjengbam Anand</a> and
+      <a href="https://www.linkedin.com/in/rachitverma23/" target="_blank" rel="noopener noreferrer">Rachit Verma</a>, focusing on Legal NLP, and attended the
+      <a href="https://ltrc.iiit.ac.in/iasnlp2024/" target="_blank" rel="noopener noreferrer">IASNLP 2024</a> summer school.
+      You can find me on <a href="https://github.com/vishnusathwikreddy" target="_blank" rel="noopener noreferrer">GitHub</a> and
+      <a href="https://x.com/VishnuSathvik1" target="_blank" rel="noopener noreferrer">Twitter</a>, or reach me via <a href="mailto:vishnusathvik100@gmail.com">email</a>.
+    </p>
+  </main>
 
-                <p class="fade-in">
-                    I have been fortunate to collaborate with experienced researchers during my academic journey. 
-                    I am currently working with 
-                    <a href="https://amartya18x.github.io/" target="_blank" rel="noopener noreferrer">Amartya Sanyal</a>.
-                    In the summer of 2024, I interned at the 
-                    <a href="https://ema.iitdh.ac.in/" target="_blank" rel="noopener noreferrer">EMA Lab</a> at IIT Dharwad, 
-                    under the guidance of 
-                    <a href="https://sites.google.com/view/drkonjengbamanand?pli=1" target="_blank" rel="noopener noreferrer">Dr. Konjengbam Anand</a> 
-                    and 
-                    <a href="https://www.linkedin.com/in/rachitverma23/" target="_blank" rel="noopener noreferrer">Mr. Rachit Verma</a>. 
-                    There, I worked on Legal NLP projects. I also had the opportunity to attend the 
-                    <a href="https://ltrc.iiit.ac.in/iasnlp2024/" target="_blank" rel="noopener noreferrer">International Advanced Summer School on Natural Language Processing 2024</a>, 
-                    organized by <a href="https://ltrc.iiit.ac.in/" target="_blank" rel="noopener noreferrer">LTRC</a>. at IIIT Hyderabad. 
-                </p>
+  <section id="research" class="section">
+    <h2 class="section-title">Research interests</h2>
+    <ul class="section-list">
+      <li><strong>Reasoning in Language Models:</strong> methods to enhance multi-step reasoning in LLMs/SLMs.</li>
+      <li><strong>Context-Aware AI:</strong> using richer context to make models more reliable.</li>
+      <li><strong>Multimodal Reasoning:</strong> bridging text and vision for better understanding.</li>
+      <li><strong>Mathematical Problem-Solving:</strong> improving models on structured, symbolic tasks.</li>
+    </ul>
+  </section>
 
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <ul class="contact-list">
+      <li><a href="mailto:vishnusathvik100@gmail.com">Email</a></li>
+      <li><a href="https://github.com/vishnusathwikreddy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/vishnusathwikreddy/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+  <li><a href="https://x.com/VishnuSathvik1" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+      <li><a href="assets/vishnu_resume.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+    </ul>
+    <p class="note">Open to research collaborations and internships. If our interests align, feel free to reach out.</p>
+  </section>
 
-                <p class="fade-in">
-                    My core focus lies in enhancing the reasoning capabilities of language models—from tackling complex mathematical problems to enabling smarter, context-aware AI systems. I'm particularly interested in multimodal AI that can understand and reason across different forms of data, including text, images, and other modalities.  <br>
-                    Outside of research, I enjoy playing badminton, video games, and I am addicted to sudoku. <br> <br>
-                    Let's innovate together and shape the future of intelligent systems!
-                </p>
+  
 
-                <div class="cta-container">
-                    <a href="assets/vishnu_resume.pdf" class="button" download>View CV</a>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section id="publications" class="full-page">
-            <div class="container">
-                <h2>Publications</h2>
-                <div class="publications-content">
-                    <p>As an undergraduate researcher, I'm currently in the exciting phase of developing my research portfolio. While I don't have formal publications yet, I'm actively working on several projects at the cutting edge of AI and NLP research.</p>
-                    
-                    <h3>Research Interests</h3>
-                    <ul>
-                        <li><strong>Reasoning in Language Models:</strong> Developing methods to enhance the reasoning capabilities of LLMs and SLMs, particularly for complex tasks requiring multi-step problem-solving</li>
-                        <li><strong>Multimodal Reasoning:</strong> Exploring the intersection of vision and language to build AI systems that can reason across different modalities</li>
-                        <li><strong>Mathematical Problem-Solving:</strong> Investigating how language models approach and solve mathematical challenges, and designing techniques to improve their performance</li>
-                        <li><strong>Context-Aware AI:</strong> Creating systems that better understand and utilise contextual information across diverse scenarios</li>
-                    </ul>
-                    
-                    <p>I'm committed to contributing meaningful research to the AI community. Stay tuned for upcoming publications!</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="news" class="full-page">
-            <div class="container">
-                <h2>News & Updates</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <div class="news-date">Aug 17, 2025</div>
-                        <p class="news-content">New blog post: <a href="https://www.notion.so/From-Gamblers-to-Galaxies-The-Secret-Origin-of-the-Bell-Curve-250cc849dbc7803a93beea769353813c" target="_blank" rel="noopener noreferrer">From Gamblers to Galaxies: The Secret Origin of the Bell Curve</a></p>
-                    </div>
-
-
-                    <div class="news-item">
-                        <div class="news-date">Mar 12, 2025</div>
-                        <p class="news-content">Joined as an undergrad researcher at <a href="https://precog.iiit.ac.in/" target="_blank" rel="noopener noreferrer">Precog research group</a> under the mentorship of <a href="https://precog.iiit.ac.in/bio/" target="_blank" rel="noopener noreferrer">Dr. Ponnurangam Kumarguru</a></p>
-                    </div>
-
-                    <div class="news-item">
-                        <div class="news-date">Feb 23, 2025</div>
-                        <p class="news-content">New blog post: <a href="https://medium.com/@vishnusathvik100/beautiful-math-behind-principle-component-analysis-0170ff62b2ae" target="_blank" rel="noopener noreferrer">Beautiful Math Behind Principal Component Analysis</a></p>
-                    </div>
-
-                    <div class="news-item">
-                        <div class="news-date">Jul 28, 2024</div>
-                        <p class="news-content">New blog post: <a href="https://medium.com/@vishnusathvik100/behind-the-magic-training-large-language-models-from-data-collection-to-rlhf-ab351bf9c99c" target="_blank" rel="noopener noreferrer">Behind the Magic: Training Large Language Models</a></p>
-                    </div>
-
-                    <div class="news-item">
-                        <div class="news-date">Jun 21, 2024</div>
-                        <p class="news-content">Participated in IASNLP Summer School at IIIT Hyderabad</p>
-                    </div>
-
-                    <div class="news-item">
-                        <div class="news-date">Jun 20, 2024</div>
-                        <p class="news-content">Completed internship at EMA Lab, IIT Dharwad</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="full-page">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <ul class="contact-list">
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <a href="mailto:vishnusathvik100@gmail.com">vishnusathvik100@gmail.com</a>
-                                    <a href="mailto:chintala.reddy@research.iiit.ac.in">chintala.reddy@research.iiit.ac.in</a>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fab fa-linkedin"></i>
-                                <a href="https://www.linkedin.com/in/chintala-vishnu-sathwik-reddy-14117a257/" target="_blank" rel="noopener noreferrer">Chintala Vishnu Sathwik Reddy</a>
-                            </li>
-                            <li>
-                                <i class="fab fa-twitter"></i>
-                                <a href="https://twitter.com/VishnuSathvik1" target="_blank" rel="noopener noreferrer">@VishnuSathvik1</a>
-                            </li>
-                            <li>
-                                <i class="fab fa-github"></i>
-                                <a href="https://github.com/vishnusathwikreddy" target="_blank" rel="noopener noreferrer">vishnusathwikreddy</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contact-cta">
-                        <h3>Let's Connect</h3>
-                        <p>I'm always looking for new opportunities and collaborations. Whether you have an opportunity in mind, a question, or just want to say hello, feel free to reach out. I'll get back to you!</p>
-                        <a href="assets/vishnu_resume.pdf" class="button" download>View CV</a>
-                        
-                        <div class="visitor-stats-compact">
-                            <h4>🌍 Visitor Map</h4>
-                            <div class="visitor-map-container">
-                                <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=TAjLkGNfRpU04viAmuAQ8Qr3d2ZpafMx5r6kopFwAkw&cl=ffffff&w=a"></script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blogs" class="full-page">
-            <div class="container">
-                <h2>Blogs</h2>
-                <div class="blog-list">
-                    <div class="blog-item">
-                        <div class="blog-date">Aug 17, 2025</div>
-                        <p class="blog-content"><a href="https://www.notion.so/From-Gamblers-to-Galaxies-The-Secret-Origin-of-the-Bell-Curve-250cc849dbc7803a93beea769353813c">From Gamblers to Galaxies: The Secret Origin of the Bell Curve</a> - History and derivation the equation of Gaussian distribution.</p>
-                    </div>
-                    
-                    <div class="blog-item">
-                        <div class="blog-date">Feb 23, 2025</div>
-                        <p class="blog-content"><a href="https://medium.com/@vishnusathvik100/beautiful-math-behind-principle-component-analysis-0170ff62b2ae">Beautiful Math Behind Principal Component Analysis.</a> - Explaining the math behind PCA with examples.</p>
-                    </div>
-
-                    <div class="blog-item">
-                        <div class="blog-date">Jul 28, 2024</div>
-                        <p class="blog-content"><a href="https://medium.com/@vishnusathvik100/behind-the-magic-training-large-language-models-from-data-collection-to-rlhf-ab351bf9c99c">Behind the Magic: Training Large Language Models</a> - A basic understanding of LLM training</p>
-                    </div>
-
-                    <div class="blog-item">
-                        <div class="blog-date">Jan 15, 2024</div>
-                        <p class="blog-content"><a href="https://vishnusathwikreddy.github.io/vishnuwebsite/neuralnetwork.html">What happens inside a simple neural network</a> - Understanding neural network fundamentals</p>
-                    </div>
-
-                    <div class="blog-item">
-                        <div class="blog-date">Jun 25, 2023</div>
-                        <p class="blog-content"><a href="https://vishnusathwikreddy.github.io/vishnuwebsite/ai.html">Impact of Artificial Intelligence on human jobs</a> - Analyzing AI's influence on employment</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Vishnu Sathwik. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
